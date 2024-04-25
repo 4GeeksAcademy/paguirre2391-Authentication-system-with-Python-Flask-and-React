@@ -14,10 +14,10 @@ export function LoginPage() {
       email: loginEmail,
       password: loginPassword,
     };
-    console.log(loginData);
+    
 
     try {
-      const response = await fetch(new URL("/api/login", process.env.BACKEND_URL), {
+      const response = await fetch(new URL("/login", process.env.BACKEND_URL), {
         method: "POST",
         body: JSON.stringify(loginData),
         headers: {

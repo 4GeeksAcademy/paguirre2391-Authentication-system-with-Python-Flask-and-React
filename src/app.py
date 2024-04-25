@@ -46,6 +46,9 @@ def handle_invalid_usage(error):
 def sitemap():
     return generate_sitemap(app)
 
+# Definir la ruta al directorio de archivos estáticos
+static_file_dir = os.path.join(os.path.dirname(__file__), 'static')
+
 # Servir cualquier otro archivo estático
 @app.route('/<path:path>', methods=['GET'])
 def serve_any_other_file(path):
