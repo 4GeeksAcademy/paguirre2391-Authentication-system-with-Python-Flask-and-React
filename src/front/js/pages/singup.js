@@ -30,7 +30,7 @@ export function Singup() {
         const body = await response.json();
         console.log(body);
         actions.setToken(body.jwt_token);
-        navigate("/private");
+        navigate("/privateprofile");
       } else {
         alert("Error al registrar usuario");
         throw new Error(response.status);

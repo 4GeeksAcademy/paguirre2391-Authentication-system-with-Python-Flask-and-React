@@ -56,7 +56,7 @@ export function LoginPage() {
         </div>
         <div className="mb-3">
           <label htmlFor="loginPassword" className="form-label">Contraseña</label>
-          <input type="password" className="form-control" id="loginPassword" required />
+          <input type="password" className="form-control" id="loginPassword" required autoComplete="current-password"/>
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <button type="submit" className="btn btn-dark">Iniciar Sesión</button>
